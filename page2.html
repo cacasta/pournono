@@ -11,8 +11,19 @@
 
   <main class="container">
 
-    <header class="page-header">
-      <h1> OUAIS TU L'EST</h1>
+    <header class="page-header">  
+	<div class="container">
+    <img src="nono.jpg" class="left-img">
+    
+    <div class="text">
+        <h1>❤️ OUAIS TU L'EST  ❤️ </h1>
+ 
+    </div>
+
+    <img src="noah.jpg" class="right-img">
+</div>
+
+		
 	<style>
 		h1 {
             color: #F52C65;
@@ -36,5 +47,23 @@
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
+		.container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 40px; /* espace entre les éléments */
+			margin-top: 50px;
+		}
+
+		.left-img, .right-img {
+			width: 200px; /* tu peux changer la taille */
+			border-radius: 20px; /* arrondir les bords */
+		}
+
+		.text {
+			text-align: center;
+			color: white; /* si ton fond est rose */
+			font-size: 24px;
+		}
 	</style>
 	</header>
