@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Valentin</title>
+    <style>
+        body {
+            margin: 0;
+            background: linear-gradient(-45deg, #F57DAC, #F25A96, white, #F52C7D);
+            background-size: 300% 300%;
+            animation: animateBG 15s ease infinite;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contenu {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            max-width: 400px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #F52C65;
+            font-family: Arial;
+            font-size: 28px;
+            margin: 0 0 40px 0; /* ESPACE entre texte et boutons */
+        }
+
+        button {
+            padding: 12px 24px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+        }
+
+        .btn1 { background-color: #E60049; color: white; }
+        .btn2 { background-color: #E60049; color: white; }
+        button:hover { opacity: 0.8; }
+
+        @keyframes animateBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body>
+    <!-- TEXTE D'ABORD -->
+    <div class="contenu">
+        <h1>Veux-tu être mon Valentin cette année ?</h1>
+        
+        <!-- BOUTONS EN-DESSOUS -->
+        <a href="page2.html">
+            <button class="btn1">OUI 💖</button>
+        </a>
+        <a href="index.html">
+            <button class="btn2" onclick="alert('TU EST SUR DE TON CHOIX?????!')">NON </button>
+        </a>
+    </div>
+</body>
+</html>
